@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Unciv LLM</title>
+<title>GPT plays Unciv</title>
 <style>
   body {
     max-width: 680px;
@@ -18,9 +18,6 @@
   h2 { font-size: 1.3em; margin-top: 2.5em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
   h3 { font-size: 1em; margin-bottom: 0.3em; }
   a { color: #0645ad; }
-  .sub { color: #666; margin-top: 4px; }
-  .meta { color: #666; font-size: 0.9em; }
-  footer { margin: 4em 0 2em; color: #888; font-size: 0.85em; }
   .win, .loss { font-weight: bold; }
   .win { color: #1a7f37; }
   .loss { color: #c62828; }
@@ -31,66 +28,66 @@
 <h1>GPT plays Unciv</h1>
 
 <p>
-  We get GPT-6.1 Sol (High) to play <a href="https://github.com/yairm210/unciv">Unciv</a>, an open source remake of Civilization V, through pure computer use, without any additional assistance. It is given minimal prompt, without any specific strategy or instructions.
+  We get GPT-6.1 Sol (High) to play <a href="https://github.com/yairm210/unciv">Unciv</a>, an open source remake of Civilization V, through pure computer use, without any additional assistance. It is given a minimal prompt, without any specific strategy or instructions.
 </p>
 
-<p>Full prompt template: <i>There is a game of Unciv opened. Play it against the built-in AI to the best of your ability. The setting is 1v1/Prince/Tiny/Quick, others at default. Touch nothing else. Do not change any setting.</i></p>
+<p>Full prompt template: <i>There is a game of Unciv opened. Play it against the built-in AI to the best of your ability. The setting is 1v1/{difficulty}/Tiny/Quick, others at default. Touch nothing else. Do not change any setting.</i></p>
 
-<p>The full gameplay videos are available below. They are only edited to remove the long thinking pauses between every actions. All the save files can be found <a href="https://github.com/ssamt/unciv-llm/tree/main/saves">here</a>.</p>
+<p>The full gameplay videos are available below. They are only edited to remove the long thinking pauses between actions. All the save files can be found <a href="https://github.com/ssamt/unciv-llm/tree/main/saves">here</a>.</p>
 
 <h2>Prince</h2>
 
 <h3>Game 1 (<a href="https://youtu.be/08PImAxgjOA">Video</a>)</h3>
-<p>AI: Aztecs · Opponent: Inca · <span class="win">Win</span> by Domination Victory at Turn 54</p>
+<p>GPT: Aztecs · Opponent: Inca · <span class="win">Win</span> by Domination at Turn 54</p>
 
 <h3>Game 2 (<a href="https://youtu.be/TGMtvgajxSU">Video</a>)</h3>
-<p>AI: Spain · Opponent: Denmark · <span class="win">Win</span> by Domination Victory at Turn 59</p>
+<p>GPT: Spain · Opponent: Denmark · <span class="win">Win</span> by Domination at Turn 59</p>
 
 <h3>Game 3 (<a href="https://youtu.be/YYxZANUnK98">Video</a>)</h3>
-<p>AI: The Netherlands · Opponent: Japan · <span class="win">Win</span> by Domination Victory at Turn 77</p>
+<p>GPT: The Netherlands · Opponent: Japan · <span class="win">Win</span> by Domination at Turn 77</p>
 
 <h2>King</h2>
 
 <h3>Game 1 (<a href="https://youtu.be/gACD1n79BZA">Video</a>)</h3>
-<p>AI: England · Opponent: India · <span class="win">Win</span> by Domination Victory at Turn 42</p>
+<p>GPT: England · Opponent: India · <span class="win">Win</span> by Domination at Turn 42</p>
 
 <h3>Game 2 (<a href="https://youtu.be/OycyhMABpMU">Video</a>)</h3>
-<p>AI: Ethiopia · Opponent: Korea · <span class="win">Win</span> by Domination Victory at Turn 63</p>
+<p>GPT: Ethiopia · Opponent: Korea · <span class="win">Win</span> by Domination at Turn 63</p>
 
 <h3>Game 3 (<a href="https://youtu.be/BPoU5wI61Sg">Video</a>)</h3>
-<p>AI: Inca · Opponent: Sweden · <span class="win">Win</span> by Domination Victory at Turn 48</p>
+<p>GPT: Inca · Opponent: Sweden · <span class="win">Win</span> by Domination at Turn 48</p>
 
 <h2>Emperor</h2>
 
 <h3>Game 1 (<a href="https://youtu.be/_HvwIEtAvwk">Video</a>)</h3>
-<p>AI: Japan · Opponent: Sweden · <span class="win">Win</span> by Domination Victory at Turn 68</p>
+<p>GPT: Japan · Opponent: Sweden · <span class="win">Win</span> by Domination at Turn 68</p>
 
 <h3>Game 2 (<a href="https://youtu.be/q1NfgsjLzqU">Video</a>)</h3>
-<p>AI: Ethiopia · Opponent: The Maya · <span class="win">Win</span> by Domination Victory at Turn 85</p>
+<p>GPT: Ethiopia · Opponent: The Maya · <span class="win">Win</span> by Domination at Turn 85</p>
 
 <h3>Game 3 (<a href="https://youtu.be/AM9zF23Pry4">Video</a>)</h3>
-<p>AI: America · Opponent: Sweden · <span class="win">Win</span> by Domination Victory at Turn 109</p>
+<p>GPT: America · Opponent: Sweden · <span class="win">Win</span> by Domination at Turn 109</p>
 
 <h2>Immortal</h2>
 
 <h3>Game 1 (<a href="https://youtu.be/10g8KI4WJBQ">Video</a>)</h3>
-<p>AI: The Maya · Opponent: Songhai · <span class="loss">Loss</span> by Domination Victory at Turn 147</p>
+<p>GPT: The Maya · Opponent: Songhai · <span class="loss">Loss</span> by Domination at Turn 147</p>
 
 <h3>Game 2 (<a href="https://youtu.be/SnSYKQAYTVs">Video</a>)</h3>
-<p>AI: Austria · Opponent: Carthage · <span class="win">Win</span> by Domination Victory at Turn 60</p>
+<p>GPT: Austria · Opponent: Carthage · <span class="win">Win</span> by Domination at Turn 60</p>
 
 <h3>Game 3 (<a href="https://youtu.be/3rXI4qIyTUk">Video</a>)</h3>
-<p>AI: Greece · Opponent: France · <span class="loss">Loss</span> by Domination Victory at Turn 111</p>
+<p>GPT: Greece · Opponent: France · <span class="loss">Loss</span> by Domination at Turn 111</p>
 
 <h2>Deity</h2>
- 
+
 <h3>Game 1 (<a href="https://youtu.be/21t-XHWvj7g">Video</a>)</h3>
-<p>AI: Siam · Opponent: The Netherlands · <span class="loss">Loss</span> by Domination Victory at Turn 60</p>
+<p>GPT: Siam · Opponent: The Netherlands · <span class="loss">Loss</span> by Domination at Turn 60</p>
 
 <h3>Game 2 (<a href="https://youtu.be/7wkxS6sz_FM">Video</a>)</h3>
-<p>AI: Aztecs · Opponent: Japan · <span class="loss">Loss</span> by Domination Victory at Turn 49</p>
+<p>GPT: Aztecs · Opponent: Japan · <span class="loss">Loss</span> by Domination at Turn 49</p>
 
 <h3>Game 3 (<a href="https://youtu.be/pktHh9WE_4U">Video</a>)</h3>
-<p>AI: Siam · Opponent: Denmark · <span class="loss">Loss</span> by Domination Victory at Turn 59</p>
+<p>GPT: Siam · Opponent: Denmark · <span class="loss">Loss</span> by Domination at Turn 59</p>
 </body>
 </html>
